@@ -1,0 +1,125 @@
+.scrolling-wrapper{
+    overflow-x: auto;
+    overflow-y:hidden;
+}
+
+.card-block{
+	/* height: 40vh;
+    width:20vh; */
+    
+	/* // background-color: #fff;
+	border: none;
+	// background-position: center;
+	// background-size: cover;
+    // transition: all 0.2s ease-in-out !important; */
+    padding: .25rem;
+    height: 25rem;
+
+    min-width: 13rem;
+    /* max-width: 40rem; */
+   
+    
+}
+
+.card{
+	background-color: white;
+    border-radius: 12px;
+    border: none;
+    position: relative;
+    /* max-height:26.5rem ; */
+	/* // background-color: #4158D0; */
+/* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+}
+
+.card-body {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding-top:0.25rem;
+    padding-left:0.25rem;
+    padding-right:0.25rem;
+    padding-bottom: 0.75rem;
+    width:100%;
+    text-align: center;
+    position: absolute;
+    bottom:0;
+    background-color: white;
+    
+
+}
+
+
+.desccontainer{
+    /* padding-left: 14.5vw; */
+    /* padding-right: 14.5vw; */
+    background-color: #060C34;
+    min-width: 72%;
+}
+
+.actor-pic{
+    /* -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; */
+    position: relative;
+    border-top-left-radius: 12px;
+    border-top-right-radius:12px;
+}
+  
+.card-text{
+    text-align: center;
+    /* padding-top: 0.5rem;
+    padding-bottom: .5rem; */
+}
+
+.actor-name{
+ 
+    margin-bottom: 0px;
+    margin-top:5%;
+}
+
+
+.as{
+    padding:0px;
+    margin-bottom: 0px;
+    font-weight: bolder;
+}
+
+h1{
+    /* padding-left: 14.8%; */
+    color: white;
+    font-size: 2.5rem;
+}
+
+::ng-deep .scrolling-wrapper-normal::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: transparent;
+    height: 0.5rem;
+
+}
+
+::ng-deep .scrolling-wrapper-mobile::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: transparent;
+    height: 0.5rem;
+    display: none;
+    scrollbar-width: none; 
+}
+   
+::ng-deep ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+    box-shadow: inset 0 0 6px rgba(178, 178, 178, 0.5);
+    background-color: #060C34;
+    border-radius: 10px;
+    /* border: 1px solid #B2B2B2; */
+    
+}
+   
+::ng-deep ::-webkit-scrollbar-thumb {
+    background-color:#B2B2B2;
+    border-radius: 10px;
+    /* outline: 1px solid darkgrey; */
+}
+
+span{
+    padding-bottom: 0px;
+}
+

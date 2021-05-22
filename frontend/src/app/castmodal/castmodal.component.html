@@ -1,0 +1,51 @@
+
+<!-- <ngb-modal-window class="modal"> -->
+
+<div *ngIf="data_received" style="  display: flex; flex-direction: column; overflow: hidden; max-height:80rem">
+    <div class="modal-header">
+            <h4 class="modal-title">{{actor_details['name']}}</h4>
+            <button type="button" class="close"  aria-label="Close" (click)="modal.dismiss('Cross click')" ><!--  -->
+                <span aria-hidden="true">&times;</span>
+            </button>
+    </div>
+    <div class="modal-body">
+    
+        <div class="row">
+
+            <div class="col-sm-3">
+                <img style="position: relative; width: 100%; height: 100%;" [src]="actor_image" alt="">
+            </div>
+            <div class="col-sm-9">
+                <span  *ngIf="actor_details['dob']">Birth: {{actor_details['dob']}}<br></span>
+                <span  *ngIf="actor_details['birthplace']">Birth Place: {{actor_details['birthplace']}}<br></span>
+                <span  *ngIf="actor_details['gender']">Gender: {{actor_details['gender']}}<br></span>
+                <span  *ngIf="actor_details['homepage']">Website: <a target="_" href="{{actor_details['homepage']}}">{{actor_details['homepage']}}</a><br></span>
+                <span  *ngIf="actor_details['known_for']">Known for: {{actor_details['known_for']}}<br></span>
+                <span  *ngIf="actor_details['aka']">Also Known as: {{actor_details['aka']}}<br></span>
+                <span><br>
+                    <a triggers="mouseenter:mouseleave" ngbPopover="Visit IMDB" href="{{actor_details['imdb']}}" target="_" *ngIf="actor_details['imdb']" class="fa fa-imdb fa-2x"></a> 
+                    <a triggers="mouseenter:mouseleave" ngbPopover="Visit Instagram" href="{{actor_details['insta']}}" target="_" *ngIf="actor_details['insta']" class="fa fa-instagram fa-2x"></a> 
+                    <a triggers="mouseenter:mouseleave" ngbPopover="Visit Facebook" href="{{actor_details['fb']}}" target="_" *ngIf="actor_details['fb']" class="fa fa-facebook-square fa-2x"></a> 
+                    <a triggers="mouseenter:mouseleave" ngbPopover="Visit Twitter" href="{{actor_details['twtr']}}" target="_" *ngIf="actor_details['twtr']" class="fa fa-twitter fa-2x"></a> 
+
+                    
+
+                </span>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-12" *ngIf="actor_details['bio']">
+                <h2>Biography</h2>
+                <span >{{actor_details['bio']}}</span><br>
+            </div> 
+        </div>
+    </div>
+</div>
+<!-- </ngb-modal-window> -->
+
+  <!-- <div class="modal-footer">
+    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+  </div> -->
+
+  

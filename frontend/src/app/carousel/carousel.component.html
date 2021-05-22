@@ -1,0 +1,24 @@
+<br>
+
+<div class="container-fluid" [ngClass]="cont_padding_class" >
+  <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [showNavigationIndicators]="!mobile" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
+    <ng-template ngbSlide  *ngFor="let img of images; index as i">
+         
+      <a (click)='onSelect(links[i])' style="cursor:pointer;">
+        <div class="img-container zoom" [ngClass]="img_cont_class" >
+          <img [src]="img" alt="My image {{i + 1}} description" class="w-100">
+          <div class="overlay">
+            <span  class="carousel-caption">
+              <p>{{captions[i]}}</p>
+            </span>
+          </div>
+        </div>
+      </a>
+
+    </ng-template>
+  </ngb-carousel>
+
+</div>
+<br>
+
+

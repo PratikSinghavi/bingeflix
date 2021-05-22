@@ -1,0 +1,52 @@
+.custom-model > .modal-dialog{
+    width: 120vh;
+    
+}
+
+/* ::ng-deep .md-class .modal-dialog { 
+    max-width: 80%;
+    width: 80%;
+} */
+
+.fa{
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.fa-facebook-square  {
+    color: #3B5998;
+}
+
+.fa-twitter {
+    color: #55ACEE;
+}
+
+.fa-imdb {
+    color: #EEC548;
+}
+
+.fa-instagram {
+    color: #9D40A0;
+}
+
+
+
+::ng-deep ::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: transparent;
+    height: 0.5rem;
+}
+   
+::ng-deep ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(178, 178, 178, 0.5);
+    background-color: transparent;
+    border-radius: 10px;
+    /* border: 1px solid #B2B2B2; */
+    
+}
+   
+::ng-deep ::-webkit-scrollbar-thumb {
+    background-color:#B2B2B2;
+    border-radius: 10px;
+    /* outline: 1px solid darkgrey; */
+}

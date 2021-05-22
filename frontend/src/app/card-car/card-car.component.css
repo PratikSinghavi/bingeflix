@@ -1,0 +1,71 @@
+.card{
+    border:none;
+    margin-top: 10%;
+    margin-bottom: 30%;
+    width: 95%;
+}
+
+.w-92{
+    width: 92%;
+}
+
+ngb-carousel{
+    outline: none;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+
+/* .carousel-control-next, .carousel-control-prev{
+    width:10%
+} */
+
+
+.grow{
+    transition: 100ms ease;
+}
+
+.grow:hover{
+    transform: scale(1.1);
+}
+
+
+.card-class-normal .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to top, black 25%, rgba(0,0,0,0));;
+    opacity:0;
+    transition:opacity 200ms ease;
+    
+}
+
+.card-class-mobile .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to top, black 25%, rgba(0,0,0,0));;
+    opacity:1;
+    transition:opacity 200ms ease;
+    
+}  
+
+.card:hover .overlay{
+    opacity:1;
+}
+
+.carousel-caption{
+    text-align: left;
+    padding-bottom: 0px;
+    left: 10%;
+    /* background-color: red; */
+}
+
+.carousel-caption p{
+    margin-bottom: 0rem;
+    font-size: large;
+}

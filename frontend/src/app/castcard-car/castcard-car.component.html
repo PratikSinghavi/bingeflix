@@ -1,0 +1,44 @@
+<!-- <div class="container"> -->
+<br>
+<div class="container desccontainer"  *ngIf="(cast | keyvalue)?.length">
+    <h1 class="pl-1 pr-1" >Full Cast and Crew</h1>
+
+    <div class="scrolling-wrapper row flex-row flex-nowrap" [ngClass]='scrolling_wrapper_device'>
+			
+            <div class="m-1 card-block" style="cursor:pointer" *ngFor="let person of cast; index as i">
+                <!-- col-sm-6 col-md-2  -->
+                <div class="card h-100 " (click)="openVerticallyCentered(cast[i]['id'],cast[i]['image'])"  >
+
+                    <div class="img-container">
+                        <img class='card-img-top actor-pic' [src]="cast[i]['image']" alt="Avatar" style="width:200px; max-height: 300px;">
+                     </div>
+                    <div class="card-body">
+                    
+                       <b>{{cast[i]['actor']}}</b>
+                        <br>
+                        <b>AS</b>
+                        <br>
+                        {{cast[i]['character']}} 
+
+                    </div>
+
+                </div>
+            </div>
+
+		
+    </div>
+    <br>
+</div>
+
+  
+
+<!-- Bootstrap card template -->
+
+	<!-- <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div> -->

@@ -1,0 +1,73 @@
+input[type="text"]
+{
+    background: transparent;
+    /* border: none none none 1px; */
+    margin-right:5%;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: thin solid white;
+    /* border-color: white; */
+    outline: none;
+    color:white;
+    
+}
+
+::ng-deep .dropdown-menu 
+{ 
+    background-color: #060C34;
+    border: thin solid white;
+    border-radius: 1%;
+    /* padding-right: 1%; */
+}
+
+::ng-deep .dropdown-item 
+{ 
+    background-color: #060C34;
+    height: 6vh;
+    color: white;
+    padding-left:0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 10%;
+    /* margin:none; */
+    
+    
+}
+
+::ng-deep .dropdown-item img
+{ 
+    /* height: 9vh; */
+    width:10vh;
+    padding-left:2%;
+    padding-right: 2%;
+    margin-right: 1.5%;
+    /* padding-bottom: .25%; */
+    /* padding-top: .25%; */
+
+}
+
+::ng-deep .dropdown-item div
+{ 
+    /* height: 9vh; */
+    /* padding: 5%;
+    padding-right: 50%;
+    padding-left: 0px; */
+    padding: 2%;     
+    margin: -2%; 
+    text-decoration: none;
+    color: white;
+
+}
+
+.form-control:hover, .form-control:active, .form-control:focus{
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+#typeahead-template{
+    margin-right: 0px;
+}
+

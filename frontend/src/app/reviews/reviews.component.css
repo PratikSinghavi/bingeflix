@@ -1,0 +1,62 @@
+.h1{
+    /* padding-left: 14.8%; */
+    /* color: white; */
+    /* font-size: 2.5rem; */
+}
+
+.pl-6{
+    padding-left: 3%;
+}
+
+.pr-6{
+    padding-right: 5%;
+}
+
+.desccontainer{
+    /* padding-left: 14.5vw; */
+    /* padding-right: 14.5vw; */
+    background-color: #060C34;
+    min-width: 72%;
+}
+
+
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.review-title{
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.card{
+    border-radius: 12px;
+}
+
+.img-container{
+    align-content: left;
+    
+}
+
+img{
+    max-width:6rem;
+    border-radius: 50%;  
+}
+
+.review-rating {
+    background-color: #060D32;
+    border-radius: 20px;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    padding-bottom: .2rem;
+    padding-top: .2rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: white;
+}
+
+

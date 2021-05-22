@@ -1,0 +1,58 @@
+<br>
+<!-- *ngIf="isDataAvailable() else still_loading" -->
+<div class="container desccontainer "  >
+    <div class="row">
+        <div class="col-sm-12 col-md-8 pl-4 pr-4 ">
+            <!-- <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9BPMTr-NS9s" allowfullscreen></iframe>
+            </div> -->
+            <youtube-player class = 'embed-responsive embed-responsive-16by9 mb-3' videoId="{{video['videoid']}}" suggestedQuality="highres"></youtube-player>
+        </div>
+        <div class="col-sm-12 col-md-4 pl-4 pr-4">
+            <h1 id='movie-title' style=' font-weight:normal; font-size: 3.2rem; color: white;'>{{result['name']}} </h1>
+            <p class='text-grey-upperhalf' style='font-size: 1.5rem'><i>{{result['tagline']}}</i> </p>
+            <p class='text-grey-upperhalf pt-2 mb-2' style='font-size: 1.5rem'>{{result['release_date']}} <span *ngIf="result['release_date']">|</span> &#9733; {{result['rating']}} <span *ngIf="result['runtime']">|</span> {{result['runtime']}}</p>
+            
+            <p class='genre' >Genres : <b class='text-grey-upperhalf' style='font-size: 1.25rem'> {{result['genres']}}  </b> </p> 
+            <p class='lang text-white'>Spoken Languages : <b class='text-grey-upperhalf' style='font-size: 1.25rem'>{{result['lang']}}</b> </p> 
+
+            <p>
+                <a type="button" class="btn btn-primary shadow-none"  (click)="add_remove_watchlist(item_to_add,catid);" >{{button_text}}</a></p>
+                <!-- <ngb-alert #selfClosingAlert *ngIf="successMessage" type="success" (closed)="successMessage = ''"></ngb-alert> -->
+                <p> <ngb-alert #selfClosingAlert *ngIf="successMessage" type="{{alert_type}}" (closed)="successMessage = ''">{{ successMessage }}</ngb-alert>
+            </p>
+              
+        </div>
+    </div>
+    <div class="row " >
+        <div class="col-sm-12 pl-4 pr-4">
+            <p class="h5 desctitle text-white font-weight-normal" *ngIf="result['overview']">Description</p>
+            <p class="desccontent text-grey font-weight-normal text-justify" style='font-size: 1.25rem'> {{result['overview']}}  </p>
+        </div>
+        
+    </div>
+    <div class="row pt-3">
+        <div class="col-sm-12 pl-4 pr-4">
+
+                <p class=" h5 desctitle text-white font-weight-normal">Share</p>
+
+                <!-- Twitter -->
+                <a class="twitter-share-button tweetcl" target="_" 
+                href="https://twitter.com/intent/tweet?text=Watch {{result['enc_title']}} www.youtube.com/watch?v={{video['videoid']}}&hashtags=USC,CSCI571,FightOn"> 
+                <i class="fa fa-twitter fa-2x"> </i> 
+                </a>
+
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v={{video['videoid']}}" target="_blank">
+                    <i class="fa fa-facebook-square fa-2x"> </i> 
+                  </a>
+                
+        </div>
+    </div>
+
+</div>
+
+
+<!-- <ng-template #still_loading>
+    
+</ng-template> -->
+

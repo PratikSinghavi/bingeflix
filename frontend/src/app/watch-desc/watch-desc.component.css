@@ -1,0 +1,106 @@
+/* .youtubeplayer{
+    height:20vh;
+} */
+
+@media screen and (min-width: 768px) {
+    .desctitle {
+     padding-left:1rem;
+     padding-right:1rem;
+    }
+
+    .desccontent {
+        padding-left:1rem;
+        padding-right:1rem;
+       }
+
+    .tweetcl{
+    padding-left:1rem;
+    }
+    
+  }
+
+
+
+
+.desccontainer{
+    /* padding-left: 14.5vw; */
+    /* padding-right: 14.5vw; */
+    background-color: #060C34;
+    min-width: 72%;
+}
+
+
+.bckgd{
+    background-color: #060C34;
+}
+
+p b{
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.genre{
+    font-size: 1.1rem;
+    margin-bottom: 0px;
+    color: white;
+}
+
+
+.lang{
+    font-size: 1.1rem;
+}
+
+.colorwhite{
+    color: white;
+}
+
+.desccontent{
+    font-size: 1.2rem;
+}
+
+.desctitle{
+    font-size: 1.4rem;
+}
+
+.text-grey{
+    /* color: #808492; */
+    color: #8B8F9E;
+    /* color: #B9BAC1; */
+}
+
+.text-grey-upperhalf{
+    /* color:#8F90A3; */
+    color: #B9BAC1;
+}
+
+
+.fa{
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.fa-facebook-square  {
+    /* color: #3B5998; */
+    color: #0818AC;
+}
+
+.fa-twitter {
+    color: #55ACEE;
+}
+
+.btn-primary{
+   font-size: 20px;
+   padding-left:4%;
+   padding-right:4%;
+   
+}
+
+.btn{
+ color:white;   
+}
+
+.btn:hover{
+    color:white;   
+}
+   
+

@@ -1,0 +1,112 @@
+.cont-padding-normal{
+    /* width: 100%;  */
+    padding-left: 12.5%; 
+    padding-right: 12.5%;
+}
+
+.cont-padding-mobile{
+    /* width: 100%;  */
+    padding-left: 5.5%; 
+    padding-right: 5.5%;
+}
+
+
+.zoom{
+    transition: 100ms ease;
+}
+
+.zoom:hover{
+    transform: scale(1.1);
+}
+
+
+.img-container{
+    /* position:relative;
+    overflow: hidden; */
+    /* background-color: black; */
+    /* height: 27vw; */
+
+    /* height: 100%; */
+  }
+
+.img-cont-normal{
+    height: 26vw;
+}
+ 
+.img-cont-mobile{
+    height: 100%;
+}
+
+::ng-deep  .carousel-control-prev{
+    width: 12%;
+    /* margin-left: 0px; */
+  }
+
+  ::ng-deep  .carousel-control-next{
+    width: 12%;
+    /* margin-left: 0px; */
+}
+
+  
+
+.img-container img{
+    /* object-position: top; */
+    /* overflow: hidden; */
+}  
+
+.img-cont-normal .overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(to top, black 20%, rgba(0,0,0,0));
+opacity:0;
+transition:opacity 200ms ease;
+
+}
+
+.img-cont-mobile .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to top, black 20%, rgba(0,0,0,0));
+    opacity:1;
+    transition:opacity 200ms ease;
+    
+}
+
+/* common */
+.img-container:hover .overlay{
+opacity:1;
+}
+
+
+
+
+#ngbSlide:hover .carousel-caption{
+    display: block;
+}
+
+.overlay span{
+    position:absolute;
+    /* top:78%;
+    left:10%; */
+    /* transform:translate(-50%,-50%); */
+    color:#fff;
+    /* background-color: red; */
+    text-align: left;
+    left: 10%;
+    padding-bottom: 2%;
+    font-size: large;
+}
+
+
+ngb-carousel{
+    outline: none;
+    /* overflow: hidden; */
+}
+
+

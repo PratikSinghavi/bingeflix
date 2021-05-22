@@ -1,0 +1,27 @@
+
+<div class="container desccontainer pl-4 pr-4" *ngIf='reviews?.length>0'>
+    <span class='h1 text-white'>Reviews</span><span class="h1 text-muted"> &nbsp; {{reviews.length}}</span>
+            <!--  -->
+    <div class="col-sm-12 mb-1 p-2 " *ngFor="let review of reviews; index as i" >
+            <div class="card card-block card-1 row flex-row pt-4 pb-4 pr-6 pl-6">
+                    <!-- [src]="cast[i]['image']" -->
+                    
+                <div class="col-sm-12 col-md-2 img-container ">
+                    <img class='reviewer-pic ' [src]="review.image" alt="Avatar" style="width:100px; height:100px; overflow: hidden;">
+                </div>
+
+                <div class="container col-sm-12 col-md-10 ">
+                      <!-- <div class="row">   -->
+                         <span class='review-title '>A review created by {{review.author}}   </span><br *ngIf="mobile"> <b class="review-rating font-weight-light">  &#9733; {{review.rating}}</b> 
+                         
+                        <!-- </div> -->
+                    <br><br>
+                    <span class='as text-muted' >Written by {{review.author}} on {{review.date}}</span>
+                    <br><br>
+                    <span class='review-content line-clamp text-justify'> {{review.content}}</span> 
+                    <br>
+                    <a href="{{review.link}}" target="_"><u>Read the rest</u></a>
+                </div>
+            </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<ng-template #rt let-r="result" let-t="term"  >
+    <div  (click)="Navigate(xinput,r['category'],r['id'])" >
+    <img [src]="r['image']" >
+    <ngb-highlight [result]="r.name" [term]="t"></ngb-highlight>
+    </div>
+</ng-template>
+  
+  <!-- <label for="typeahead-template">Search for a state:</label> -->
+<input #xinput  (selectItem)="selectObj($event)"
+(blur)="blurObj()"  placeholder="Search" id="typeahead-template" type="text" class="form-control searchbar"  [(ngModel)]="model" [ngbTypeahead]="searchfnc" [resultTemplate]="rt" [inputFormatter]="formatter" />

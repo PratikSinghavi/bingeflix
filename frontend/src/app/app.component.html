@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top " [ngClass]="navbar_class_device" style="background-color: #040A23;">
+  <a class="navbar-brand mr-3" (click)="isMenuCollapsed = true" routerLink="/">USC Films</a>
+  <button class="navbar-toggler " type="button" (click)="isMenuCollapsed = !isMenuCollapsed" >
+    <!-- data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" -->
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div [ngbCollapse]='isMenuCollapsed' class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item mr-1 pr-3">
+        <a class="nav-link float-right" (click)="isMenuCollapsed = true" routerLink="/" routerLinkActive='active' [routerLinkActiveOptions]="{exact: true}" >Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item mr-1 pr-3 ">
+        <a class="nav-link float-right " (click)="isMenuCollapsed = true" routerLink="/mylist" routerLinkActive='active' >My List</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+      <app-search-typeahead (SelectEmitter)="isMenuCollapsed = true; "></app-search-typeahead>
+
+
+      <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+    </form>
+  </div>
+</nav>
+
+
+
+<router-outlet></router-outlet>

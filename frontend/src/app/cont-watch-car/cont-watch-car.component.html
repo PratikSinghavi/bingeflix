@@ -1,0 +1,69 @@
+
+<br>
+<!-- style="background-color:#060C34;" -->
+<div class="container-fluid" >
+    <div class="row" >
+        <div class="col-sm-12">
+            <!--  -->
+            <ngb-carousel #carousel [interval]="0" [showNavigationIndicators]="(!mobile && !lessthan6)" [showNavigationArrows]="(!mobile && !lessthan6) || (mobile)">
+                        <!-- each slide -->
+                        <ng-container *ngFor="let img of images; index as i">
+                            <!-- desktop version -->
+                            <ng-template ngbSlide class='ngslide' *ngIf="i % 6 == 0 && !mobile" >
+                                <div class="container-fluid w-100"  >
+                                    <!-- row for each slide -->
+                                    <div class="row"> 
+                                        <!-- cards -->
+                                        <div class="col-sm-12 col-md-2 grow"   *ngFor="let img of images | slice: i:i+6; index as j"> 
+
+                                
+                                            <a (click)='onSelect(categories[i+j],links[i+j])' style="cursor:pointer;">
+                                                <div class="card " [ngClass]='card_class_device'>
+                                                    <img class="card-img-top" [src]="img" alt="Card image cap">
+                                                    <div class="overlay">
+                                                        <span  class="carousel-caption">
+                                                        <p>{{captions[i+j]}}</p>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+
+                                        </div> 
+                                    </div>
+                                </div>
+                            </ng-template>
+
+                            <!-- mobile version -->
+                            <ng-template ngbSlide class='ngslide' *ngIf="mobile" >
+                                <div class="container-fluid "  style="width: 40vh;" >
+                                     <!-- row for each slide -->
+                                    <div class="row"> 
+                                        <!-- cards -->
+                                        <div class="col-sm-12 col-md-2 grow" *ngFor="let img of images | slice: i:i+1; index as j"> 
+    
+                                
+                                            <a (click)='onSelect(categories[i+j],links[i+j])' style="cursor:pointer;">
+                                                <div class="card " [ngClass]='card_class_device'>
+                                                    <img class="card-img-top" [src]="img" alt="Card image cap">
+                                                    <div class="overlay">
+                                                        <span  class="carousel-caption">
+                                                          <p>{{captions[i+j]}}</p>
+                                                        </span>
+                                                      </div>
+                                                </div>
+                                            </a>
+    
+    
+                                        </div> 
+                                    </div>
+                                </div>
+                            </ng-template>
+                    </ng-container>
+            </ngb-carousel>  
+        </div> 
+    </div> 
+</div>
+
+
+<br>

@@ -1,0 +1,63 @@
+<!-- <p>mylist works!</p> -->
+
+<br>
+<div style="position: relative;">
+<div class="bodydiv" style=" background-color: #060C34; ">
+<!-- style="background-color:#060C34;" -->
+
+    <div #watchlist_div class="container" *ngIf="pictures.length > 0;else watchlistempty" style="min-height: 100%;" >
+        <p class='h1 text-white pb-5 bodydivtitle'>My WatchList</p>
+        
+        <!-- <div class="row" > -->
+            <!-- <div class="col-sm-12"> -->
+                <!--  -->
+                <!-- <div > -->
+                            <!-- each slide -->
+                            <!-- <div > -->
+                                <!-- desktop version -->
+                                <!-- <div class='ngslide'  > -->
+                                    <!-- <div class="container-fluid w-100"  > -->
+                                        <!-- row for each slide -->
+                                        <div class="row" > 
+                                            <!-- cards -->
+                                            <div class="col-sm-12 col-md-2 grow"  *ngFor="let img of images; index as i"  > 
+
+                                    
+                                                <a (click)='onSelect(categories[i],links[i])' style="cursor:pointer;">
+                                                    <div class="card " [ngClass]='card_class_device'>
+                                                        <img class="card-img-top" [src]="img" alt="Card image cap">
+                                                        <div class="overlay">
+                                                            <span  class="carousel-caption">
+                                                            <p>{{captions[i]}}</p>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+
+                                            </div> 
+                                        </div>
+                                    <!-- </div> -->
+                                <!-- </div> -->
+
+                                
+                            <!-- </div> -->
+                <!-- </div>   -->
+            <!-- </div>  -->
+        <!-- </div>  -->
+    </div>
+
+
+    <ng-template #watchlistempty >
+        <h1 class="text-white text-center pt-5">No items found in Watchlist.</h1>
+    </ng-template>
+
+ 
+</div>
+
+<!-- <footer class="footer ">
+    <p>
+        Powered by TMDB. Developed by Pratik
+    </p>
+</footer> -->
+</div>

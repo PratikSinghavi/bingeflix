@@ -1,0 +1,19 @@
+<div class="homebodydiv" >
+    <app-carousel></app-carousel>
+
+
+    <div *ngIf='localData'>
+        <h1 >Continue Watching</h1>
+        <app-cont-watch-car></app-cont-watch-car>
+    </div>
+
+    <div *ngFor='let car of which_carousel; index as i'>
+        <h1 >{{cardcar_h1[i]}}</h1>
+        <app-card-car [cardcar_name]="car" ></app-card-car>
+    </div>
+    <!-- <footer class="footer">
+        <p>
+            Powered by TMDB. Developed by Pratik
+        </p>
+    </footer> -->
+</div>
