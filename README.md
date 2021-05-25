@@ -27,9 +27,6 @@ Includes a "Continue Watching" section that maintains a list of 24 most recently
 The search is implemented using ngbtypeahead that calls the backend with the keywords entered by the user to return a list of autocomplete suggestions
 
 
-#### Screens:
-
-
 ### Watch (/watch/tv/.. and /watch/movie/..)
 
 > Details for the selected media (Movie or TV show) that displays the following details:
@@ -41,13 +38,9 @@ The search is implemented using ngbtypeahead that calls the backend with the key
 > * Reviews
 > * Recommended and Similar Media
 
-#### Screens:
-
 ### MyList (/mylist)
 
 > User list containing all saved media implemented using localStorage from HTML5
-
-#### Screens:
 
 
 
