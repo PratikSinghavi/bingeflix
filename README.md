@@ -2,6 +2,8 @@
 
 Bingeflix is a place to discover & save all your binge-worthy Movies and TV Shows!
 
+[Click Here](https://github.com/PratikSinghavi/bingeflix_ios) to view the equivalent iOS App!
+
 ## Tech Specs:
 #### Frontend Specifications
 * Angular 10
