@@ -36,7 +36,7 @@ The search is implemented using ngbtypeahead that calls the backend with the key
 > * Embedded Trailer/Teaser Video (from youtube) 
 > * Description of the plot
 > * Share buttons (facebook and twitter)
-> * Cast and Crew Cards
+> * Cast and Crew Cards (Clickable - Opens Bio and Social Media profiles for the selected cast)
 > * Reviews
 > * Recommended and Similar Media
 
