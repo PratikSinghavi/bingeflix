@@ -7,24 +7,26 @@ input[type="text"]
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: thin solid white;
+    border-bottom: thin solid grey;
     /* border-color: white; */
     outline: none;
-    color:white;
+    color:#BE4675; 
+    /* text color in the searchbox */
     
 }
 
 ::ng-deep .dropdown-menu 
 { 
-    background-color: #060C34;
+    background-color: white;
     border: thin solid white;
     border-radius: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* padding-right: 1%; */
 }
 
 ::ng-deep .dropdown-item 
 { 
-    background-color: #060C34;
+    background-color: white; /* #060C34; */
     height: 6vh;
     color: white;
     padding-left:0px;
@@ -48,6 +50,22 @@ input[type="text"]
 
 }
 
+/* Change the background of the selected item on hover */
+::ng-deep .dropdown-item:hover {
+    z-index: 2;
+    background: linear-gradient(90deg,#53BBF4, #4752AD, #D03875) !important;
+    border-color: linear-gradient(90deg,#53BBF4, #4752AD, #D03875) !important;
+
+}
+
+
+/* So that the selected item doesnt revert to default blue when hover is taken out */
+::ng-deep .dropdown-item.active {
+    background: linear-gradient(90deg,#53BBF4, #4752AD, #D03875) !important;
+    border-color: linear-gradient(90deg,#53BBF4, #4752AD, #D03875) !important;
+
+}
+
 ::ng-deep .dropdown-item div
 { 
     /* height: 9vh; */
@@ -57,7 +75,7 @@ input[type="text"]
     padding: 2%;     
     margin: -2%; 
     text-decoration: none;
-    color: white;
+    color: black;
 
 }
 

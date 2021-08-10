@@ -25,9 +25,11 @@
         </div>
     </div>
     <div class="row " >
-        <div class="col-sm-12 pl-4 pr-4">
+        <div class="col-sm-12 pl-4 rightpaddesc">
             <p class="h5 desctitle text-white font-weight-normal" *ngIf="result['overview']">Description</p>
-            <p class="desccontent text-grey font-weight-normal text-justify" style='font-size: 1.25rem'> {{result['overview']}}  </p>
+            <div class="card align-center pt-2 pl-2 pr-2">
+                <p class="desccontent text-black font-weight-normal text-justify" style='font-size: 1.2rem'> {{result['overview']}}  </p>
+            </div>
         </div>
         
     </div>
@@ -37,13 +39,13 @@
                 <p class=" h5 desctitle text-white font-weight-normal">Share</p>
 
                 <!-- Twitter -->
-                <a class="twitter-share-button tweetcl" target="_" 
+                <a class="twitter-share-button tweetcl pl-0" target="_" 
                 href="https://twitter.com/intent/tweet?text=Watch {{result['enc_title']}} www.youtube.com/watch?v={{video['videoid']}}&hashtags=USC,CSCI571,FightOn"> 
                 <i class="fa fa-twitter fa-2x"> </i> 
                 </a>
 
                 <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.youtube.com/watch?v={{video['videoid']}}" target="_blank">
-                    <i class="fa fa-facebook-square fa-2x"> </i> 
+                    <i class="fa fa-facebook fa-2x"> </i> 
                   </a>
                 
         </div>

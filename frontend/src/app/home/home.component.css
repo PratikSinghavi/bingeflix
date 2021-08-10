@@ -14,33 +14,41 @@ footer{
     background-color: #060C34;
     margin-top: 5%;
     padding-bottom: 5%;
+    
 }
 
 footer p{
-    color:white;
+    color:black;
     text-align: center;
 }
 
 .homebodydiv{
     padding-bottom: 10rem;
+    /* background: linear-gradient(#9198e5, #e66465); */
+    /*background: linear-gradient(#272727 5%, #000000);
+    /* background: linear-gradient(0.25turn, #014b6b, #ebf8e1, #643cf6); */
+    /* linear-gradient(to left, black 20%, rgba(0,0,0,0)); */
+    background: linear-gradient(90deg,#53BBF4, #4752AD, #D03875);
+    overflow: overlay;
 }
 
 ::ng-deep ::-webkit-scrollbar {
     width: 0.5em;
-    background-color: transparent;
+    /* background-color: transparent; */
     height: 0.5rem;
 }
    
 ::ng-deep ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(178, 178, 178, 0.5);
-    background-color: #060C34;
-    border-radius: 10px;
+    /* box-shadow: inset 0 0 6px rgba(178, 178, 178, 0.5); */
+    /* background-color: #060C34; */
+    background: transparent;
+    /* border-radius: 10px; */
     /* border: 1px solid #B2B2B2; */
     
 }
    
 ::ng-deep ::-webkit-scrollbar-thumb {
-    background-color:#B2B2B2;
+    background:linear-gradient(90deg,#53BBF4, #4752AD, #D03875);
     border-radius: 10px;
     /* outline: 1px solid darkgrey; */
 }

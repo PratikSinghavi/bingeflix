@@ -8,16 +8,22 @@ h1{
 .desccontainer{
     /* padding-left: 14.5vw; */
     /* padding-right: 14.5vw; */
-    background-color: #060C34;
-    min-width: 80%;
+    /* background-color: #060C34; */
+    min-width: 85%;
 }
 
 
 .card{
-    border:none;
+    /* border:none; */
+    border-radius: 12px;
     margin-top: 10%;
     margin-bottom: 30%;
     width: 95%;
+    
+}
+
+.card-img-top{
+    border-radius: 12px;
 }
 
 .w-92{
@@ -59,6 +65,7 @@ ngb-carousel{
     background:linear-gradient(to top, black 25%, rgba(0,0,0,0));;
     opacity:0;
     transition:opacity 200ms ease;
+    border-radius: 12px;
     
 }
 
@@ -71,6 +78,7 @@ ngb-carousel{
     background:linear-gradient(to top, black 25%, rgba(0,0,0,0));;
     opacity:1;
     transition:opacity 200ms ease;
+    border-radius: 12px;
     
 }  
 

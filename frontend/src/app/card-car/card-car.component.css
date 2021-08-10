@@ -1,5 +1,6 @@
 .card{
-    border:none;
+    /* border:none; */
+    border-radius: 12px;
     margin-top: 10%;
     margin-bottom: 30%;
     width: 95%;
@@ -20,6 +21,9 @@ ngb-carousel{
     width:10%
 } */
 
+.card-img-top{
+    border-radius: 12px;
+}
 
 .grow{
     transition: 100ms ease;
@@ -39,7 +43,7 @@ ngb-carousel{
     background:linear-gradient(to top, black 25%, rgba(0,0,0,0));;
     opacity:0;
     transition:opacity 200ms ease;
-    
+    border-radius: 12px;
 }
 
 .card-class-mobile .overlay{
@@ -51,7 +55,7 @@ ngb-carousel{
     background:linear-gradient(to top, black 25%, rgba(0,0,0,0));;
     opacity:1;
     transition:opacity 200ms ease;
-    
+    border-radius: 12px;
 }  
 
 .card:hover .overlay{

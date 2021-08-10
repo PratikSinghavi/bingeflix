@@ -30,7 +30,8 @@ export class SearchTypeaheadComponent implements OnInit {
 
 
   auto_complete(curr_string){
-    this._httpclient.get<ITmdbsearchdata[]>(`https://angnodehw-309323.wl.r.appspot.com/search/${curr_string}`).subscribe(data => this.suggestions = data);
+    // this._httpclient.get<ITmdbsearchdata[]>(`https://angnodehw-309323.wl.r.appspot.com/search/${curr_string}`).subscribe(data => this.suggestions = data);
+    this._httpclient.get<ITmdbsearchdata[]>(`http://103.121.74.162:9095/search/${curr_string}`).subscribe(data => this.suggestions = data);
     // this._httpclient.get<ITmdbsearchdata[]>(`http://localhost:8080/search/${curr_string}`).subscribe(data => this.suggestions = data);
     // console.log(this.suggestions);
     return this.suggestions;

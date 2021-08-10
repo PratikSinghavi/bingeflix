@@ -1,17 +1,17 @@
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top " [ngClass]="navbar_class_device" style="background-color: #040A23;">
-  <a class="navbar-brand mr-3" (click)="isMenuCollapsed = true" routerLink="/">USC Films</a>
+<nav class="shadow-lg navbar navbar-expand-lg navbar-light sticky-top " [ngClass]="navbar_class_device" style="background-color: white;">
+  <a class="navbar-brand mr-3" (click)="isMenuCollapsed = true" routerLink="/">Bingeflix</a>
   <button class="navbar-toggler " type="button" (click)="isMenuCollapsed = !isMenuCollapsed" >
     <!-- data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" -->
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div [ngbCollapse]='isMenuCollapsed' class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div [ngbCollapse]='isMenuCollapsed' class="collapse navbar-collapse pb-0" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item mr-1 pr-3">
-        <a class="nav-link float-right" (click)="isMenuCollapsed = true" routerLink="/" routerLinkActive='active' [routerLinkActiveOptions]="{exact: true}" >Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link float-left" (click)="isMenuCollapsed = true" routerLink="/" routerLinkActive='nav-active' [routerLinkActiveOptions]="{exact: true}" >Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item mr-1 pr-3 ">
-        <a class="nav-link float-right " (click)="isMenuCollapsed = true" routerLink="/mylist" routerLinkActive='active' >My List</a>
+        <a class="nav-link float-left " (click)="isMenuCollapsed = true" routerLink="/mylist" routerLinkActive='nav-active' >My List</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">

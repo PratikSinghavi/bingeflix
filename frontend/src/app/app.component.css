@@ -30,3 +30,7 @@ body{
     min-height: 100vh;
 }
 
+/* Not from Bootstrap - created a new class for routerLinkActive to separate it from commonly used '.active' - allows specifying custom style*/
+.nav-active{
+    font-weight: bold;
+}
